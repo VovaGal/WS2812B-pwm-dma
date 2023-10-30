@@ -1,0 +1,1 @@
+C:\Users\vovag\OneDrive\Desktop\Embedded\ Rust\WS2128-pwm\ws2812-pwm-dma\target\thumbv7em-none-eabihf\debug\ws2812b_driver: C:\Users\vovag\OneDrive\Desktop\Embedded\ Rust\WS2128-pwm\ws2812-pwm-dma\src\main.rs

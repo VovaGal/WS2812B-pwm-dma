@@ -1,0 +1,11 @@
+C:\Users\vovag\OneDrive\Desktop\Embedded Rust\WS2128-pwm\ws2812-pwm-dma\target\thumbv7em-none-eabihf\debug\deps\rand_core-dd204b33f7f43a80.rmeta: C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\lib.rs C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\block.rs C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\error.rs C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\impls.rs C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\le.rs
+
+C:\Users\vovag\OneDrive\Desktop\Embedded Rust\WS2128-pwm\ws2812-pwm-dma\target\thumbv7em-none-eabihf\debug\deps\librand_core-dd204b33f7f43a80.rlib: C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\lib.rs C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\block.rs C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\error.rs C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\impls.rs C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\le.rs
+
+C:\Users\vovag\OneDrive\Desktop\Embedded Rust\WS2128-pwm\ws2812-pwm-dma\target\thumbv7em-none-eabihf\debug\deps\rand_core-dd204b33f7f43a80.d: C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\lib.rs C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\block.rs C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\error.rs C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\impls.rs C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\le.rs
+
+C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\lib.rs:
+C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\block.rs:
+C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\error.rs:
+C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\impls.rs:
+C:\Users\vovag\.cargo\registry\src\index.crates.io-6f17d22bba15001f\rand_core-0.6.4\src\le.rs:
