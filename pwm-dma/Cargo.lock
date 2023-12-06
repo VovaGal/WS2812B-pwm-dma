@@ -3,12 +3,6 @@
 version = 3
 
 [[package]]
-name = "anyhow"
-version = "1.0.75"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a4668cab20f66d8d020e1fbc0ebe47217433c1b6c8f2040faf858554e394ace6"
-
-[[package]]
 name = "bare-metal"
 version = "0.2.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -125,16 +119,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "defmt-rtt"
-version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "609923761264dd99ed9c7d209718cda4631c5fe84668e0f0960124cbb844c49f"
-dependencies = [
- "critical-section",
- "defmt",
-]
-
-[[package]]
 name = "deranged"
 version = "0.3.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -164,18 +148,45 @@ dependencies = [
 
 [[package]]
 name = "embedded-hal"
-version = "1.0.0-alpha.8"
+version = "1.0.0-rc.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c3babfc7fd332142a0b11aebf592992f211f4e01b6222fb04b03aba1bd80018d"
+checksum = "2894bc2f0457b8ca3d6b8ab8aad64d9337583672494013457f86c5a9146c0e22"
+
+[[package]]
+name = "embedded-hal-nb"
+version = "1.0.0-rc.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "257e3bb0163c69195acb0ebe0083b017b963235861d5ea9741626abdc55f39c9"
 dependencies = [
+ "embedded-hal 1.0.0-rc.1",
  "nb 1.1.0",
 ]
 
 [[package]]
 name = "embedded-storage"
-version = "0.2.0"
+version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "723dce4e9f25b6e6c5f35628e144794e5b459216ed7da97b7c4b66cdb3fa82ca"
+checksum = "a21dea9854beb860f3062d10228ce9b976da520a73474aed3171ec276bc0c032"
+
+[[package]]
+name = "enumflags2"
+version = "0.7.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5998b4f30320c9d93aed72f63af821bfdac50465b75428fce77b48ec482c3939"
+dependencies = [
+ "enumflags2_derive",
+]
+
+[[package]]
+name = "enumflags2_derive"
+version = "0.7.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f95e2801cd355d4a1a3e3953ce6ee5ae9603a5c833455343a8bfe3f44d418246"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.39",
+]
 
 [[package]]
 name = "fugit"
@@ -222,15 +233,6 @@ name = "nb"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8d5439c4ad607c3c23abf66de8c8bf57ba8adcd1f129e699851a6e43935d339d"
-
-[[package]]
-name = "panic-probe"
-version = "0.3.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "aa6fa5645ef5a760cd340eaa92af9c1ce131c8c09e7f8926d8a24b59d26652b9"
-dependencies = [
- "cortex-m",
-]
 
 [[package]]
 name = "powerfmt"
@@ -367,24 +369,26 @@ dependencies = [
 
 [[package]]
 name = "stm32f4xx-hal"
-version = "0.15.0"
+version = "0.18.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e60d70c1deaa1411348f1efc64761d183ab87e86b8208c5c42796a86fe6217a7"
+checksum = "80faf7c1b60e623f84584c5eddb634618e11afb5634eb871b678ef9251cef0a1"
 dependencies = [
  "bare-metal 1.0.0",
- "bitflags",
  "cortex-m",
  "cortex-m-rt",
  "embedded-dma",
  "embedded-hal 0.2.7",
- "embedded-hal 1.0.0-alpha.8",
+ "embedded-hal 1.0.0-rc.1",
+ "embedded-hal-nb",
  "embedded-storage",
+ "enumflags2",
  "fugit",
  "fugit-timer",
  "nb 1.1.0",
  "rand_core",
  "stm32f4",
  "time",
+ "vcell",
  "void",
 ]
 
@@ -484,22 +488,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "de437e2a6208b014ab52972a27e59b33fa2920d3e00fe05026167a1c509d19cc"
 dependencies = [
  "vcell",
-]
-
-[[package]]
-name = "ws2812b-driver"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "cortex-m",
- "cortex-m-rt",
- "defmt",
- "defmt-rtt",
- "nb 1.1.0",
- "panic-probe",
- "pwm-dma",
- "smart-leds-trait",
- "stm32f4xx-hal",
 ]
 
 [[package]]

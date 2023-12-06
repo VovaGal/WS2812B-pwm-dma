@@ -1,13 +1,6 @@
 Current issues that need fixing:
-    - the buzzer works but led doesnt? could be because the loop doesnt encode 24 bits for each colour properly and instead always updates 1 by 1
-    - when setting pwm; dp.TIM4.pwm_hz[0] is pinS and not pin, therefore difficulties setting 1 pin arise, might also be whats causing led pwm not to work
-    - pwm led for loop is currently very unoptimised and takes up a lot of memory
-
-
-ToDo:
-    - make pwm without pwm.rs use written dma func and not syst/spi clocks
-    - dont need transfer??
-    - generate 2 square waves, logic1/0 and reset delay
+        - currently needs bits = LED_COUNT + 1
+        - reset is now at 16 duty cycles
 
 
 Reminders:

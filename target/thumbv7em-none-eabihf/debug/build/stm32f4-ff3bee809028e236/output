@@ -1,3 +1,0 @@
-cargo:rustc-link-search=C:\Users\vovag\OneDrive\Desktop\Embedded Rust\WS2128-pwm\ws2812-pwm-dma\target\thumbv7em-none-eabihf\debug\build\stm32f4-ff3bee809028e236\out
-cargo:rerun-if-changed=src/stm32f411/device.x
-cargo:rerun-if-changed=build.rs
